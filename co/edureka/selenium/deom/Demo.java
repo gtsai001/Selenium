@@ -14,7 +14,6 @@ public class Demo {
 		driver.findElement(By.id("identifierId")).sendKeys("gtsai001@gmail.com");
 		driver.findElement(By.className("CwaK9")).click();
 			
-		//add comment in test 1 before
 		String title = driver.getTitle();
 		driver.close();
 		if ("gmail".equalsIgnoreCase(title))
