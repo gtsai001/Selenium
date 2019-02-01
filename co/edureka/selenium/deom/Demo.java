@@ -14,11 +14,12 @@ public class Demo {
 		driver.findElement(By.id("identifierId")).sendKeys("gtsai001@gmail.com");
 		driver.findElement(By.className("CwaK9")).click();
 		
+		String title = driver.getTitle();
+		driver.close();
 		String msg = "Test Failure!";
-		if (driver.getTitle() != null && driver.getTitle().equalsIgnoreCase("gmail"))
+		if (title != null && title.equalsIgnoreCase("gmail"))
 			msg = "Test Successful";
 		
-		driver.close();
 		
 		System.out.println(msg);
 
