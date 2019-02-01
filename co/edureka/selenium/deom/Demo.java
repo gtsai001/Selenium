@@ -21,7 +21,7 @@ public class Demo {
 			System.out.println("Test Successful :-)");
 		else
 			System.out.println("Test Failure !??");
-		//add comment in test 1 after
+
 	}
 
 }
