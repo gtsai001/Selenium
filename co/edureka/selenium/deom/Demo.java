@@ -13,15 +13,7 @@ public class Demo {
 		driver.manage().window().maximize();
 		driver.findElement(By.id("identifierId")).sendKeys("gtsai001@gmail.com");
 		driver.findElement(By.className("CwaK9")).click();
-		
-/*		
-		String msg = "Test Failure!";
-		if (driver.getTitle() != null && driver.getTitle().equalsIgnoreCase("gmail"))
-			msg = "Test Successful";
-		
-		driver.close();
-*/		
-
+			
 		//test 1: get the title and close the window first
 		String title = driver.getTitle();
 		driver.close();
