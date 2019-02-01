@@ -14,13 +14,12 @@ public class Demo {
 		driver.findElement(By.id("identifierId")).sendKeys("gtsai001@gmail.com");
 		driver.findElement(By.className("CwaK9")).click();
 			
-		//test 1: get the title and close the window first
 		String title = driver.getTitle();
 		driver.close();
 		if ("gmail".equalsIgnoreCase(title))
-			System.out.println("Test Successful");
+			System.out.println("Test Successful :-)");
 		else
-			System.out.println("Test Successful");
+			System.out.println("Test Failure !??");
 
 
 	}
