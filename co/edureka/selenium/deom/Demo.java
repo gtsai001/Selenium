@@ -13,15 +13,16 @@ public class Demo {
 		driver.manage().window().maximize();
 		driver.findElement(By.id("identifierId")).sendKeys("gtsai001@gmail.com");
 		driver.findElement(By.className("CwaK9")).click();
-		
+
+		//This comment is from master
 		String title = driver.getTitle();
 		driver.close();
-		String msg = "Test Failure!";
-		if (title != null && title.equalsIgnoreCase("gmail"))
-			msg = "Test Successful";
+		if ("gmail".equalsIgnoreCase(title))
+			System.out.println( "Test Successful :-)");
+		else
+			System.out.println( "Test Failure :-(");
+
 		
-		
-		System.out.println(msg);
 
 
 	}
